@@ -1,0 +1,27 @@
+###
+GET http://localhost:9000/api/usuarios HTTP/1.1
+
+###
+POST http://localhost:9000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_email":"hdgdf@gmail.com",
+    "usu_clave":"Homero",
+    "usu_nombres": "Sebas alexis",
+    "usu_apellidos": "Morales"
+}
+
+###
+DELETE http://localhost:9000/api/usuarios/idusuarios/5 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/usuarios/idusuarios/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_email":"hdhdff@gmail.com",
+    "usu_clave":"12345678",
+    "usu_nombres": "Jorge",
+    "usu_apellidos":"Ruiz"
+}
